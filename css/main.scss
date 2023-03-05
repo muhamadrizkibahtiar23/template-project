@@ -1,0 +1,115 @@
+//font
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap");
+//variable
+$primaryColor: #15a89a;
+$secondaryColor: #58d38a;
+$tersieryColor: #0a8b8b;
+
+$textColor: #091b21;
+
+//mixin
+@mixin tombol {
+  display: inline-block;
+  color: #ffffff;
+  background-color: $primaryColor;
+  border-radius: 2em;
+  padding: 0.5em 2em;
+  text-decoration: none;
+}
+
+//body
+.karokoe {
+  background-image: url(../img/imgwisata/background-trans.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 70vmax;
+}
+//body2
+.karokoedua {
+  background-color: #68f3f3;
+}
+
+//body3
+.karokoetiga {
+  background-color: #c1dbe7;
+}
+.paragraf p {
+  margin-top: 15px;
+}
+//navigator/navbar
+.custem-nav {
+  .navbar-brand {
+    img {
+      width: 20px;
+      height: 20px;
+      margin-top: -6;
+    }
+    span {
+      color: $primaryColor;
+      font-weight: 700;
+      font-size: 1.4rem;
+      margin-left: 5em;
+    }
+  }
+}
+#navbarNav {
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: $primaryColor;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-left: 4em;
+        transition: 0.3s color ease;
+        &:hover {
+          color: darken($primaryColor, 30%);
+        }
+      }
+      .jelajahi-button {
+        @include tombol;
+      }
+    }
+  }
+  @media screen and (max-width: 992px) {
+    margin-top: -1em;
+  }
+}
+
+//custem section
+.custom-section {
+  margin-top: 5em;
+  h4 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: $primaryColor;
+    white-space: nowrap;
+    line-height: 2;
+  }
+  p {
+    color: $primaryColor;
+    font-size: 1rem;
+    margin-top: 1.5em;
+  }
+
+  a {
+    @include tombol;
+
+    border: 1px solid transparent;
+
+    transition: 0.5s ease;
+    &:hover {
+      color: $primaryColor;
+      border: 1px solid $primaryColor;
+      background-color: transparent;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    margin-top: -1em;
+  }
+}
+// wisata
+#projectswisata img {
+  width: 100%;
+  height: 200px;
+}

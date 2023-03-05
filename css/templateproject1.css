@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'arial'  Times, serif;
+}
+
+body  {
+    padding-top: 64px;
+    padding-bottom: 30px;
+    background-color: white;
+    color:black;
+}
+nav {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 15px black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+}
+.text-logo{
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(100, 69, 47);
+}
+
+.nav-right {
+    display: flex;
+}
+.nav-right a {
+    padding: 20px;
+    font-weight: 500;
+    width: 150px;
+    text-align: right;
+    text-decoration: none;
+    color: black;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+  }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+#insertButton{
+    margin-left:100px;
+    padding: 22px;
+}
+.sticky1 {
+    display: flex;
+    position: fixed;
+    margin-left:100px;
+    text-decoration: none;
+    color:black;
+}
+.sticky2 {
+    display: flex;
+    position: fixed;
+    padding-left: 225px;
+    text-decoration: none;
+    color:black;
+}
+   
+@media screen and (max-width: 768px){
+    .nav-right a:not(:last-child){
+    padding:2px;
+    }
+    .nav-right a{
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 375px){
+    nav {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    }
+    
+}
+#hero {
+    background-image: url(../img/imgjam/hero11.webp);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#hero .wactch{
+    font-size: 35px;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-left: 90px;
+    color:white;
+}
+#hero .lead h5  {
+    color:white;
+    font-size: 60px;
+    padding-left: 250px;
+    font-weight: small;
+}
+@media screen and (max-width: 768px) {
+    #hero .lead h5 {
+      font-size: 40px;
+      padding-left: 40px;
+    }
+  }
+@media screen and (max-width: 375px) {
+    #hero .lead h5 {
+      font-size:20px;
+      padding-left: 2px;
+    }
+  }
+#about {
+    background-color: grey;
+}
+#about h4 {
+    padding: 20px;
+    font-weight: bold;
+    font-size: 30px;
+   
+}
+#text-about {
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+   
+}
+
+#text-about .about-left{
+    width: 50%;
+    height: auto;
+  text-align: center;
+    padding: 20px;
+    font-size: 50px;
+}
+#text-about .about-right{
+    width: 50%;
+    height: auto;
+    text-align: justify;
+    padding: 40px;
+}
+
+@media screen and (max-width: 765px) {
+    /* #about h4{
+        margin-top:-70px;
+      font-size: 40px;
+      color: indigo;
+    } */
+    #text-about{
+        flex-direction: column;
+    }
+    #text-about .about-left{
+        width: 100%;
+      text-align: center;
+        font-size: 30px;
+    }
+    #about .about-right  {
+        width:100% ;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    /* #about h4{
+        margin-top:-90px;
+      font-size: 40px;
+      color: indigo;
+      font-weight: lighter;
+    } */
+    #text-about{
+        flex-direction: column;
+    }
+    #about .about-left {
+        text-align: center;
+        font-size: 20px;
+        width: 100%;
+    }
+    #about .about-right {
+        width:100% ;
+    }
+  }
+
+#product {
+    padding: 50px 100px;
+}
+.product-title-box {
+    display: flex;
+    justify-content: center;
+
+}
+.title-box {
+    text-align: center;
+    margin: 40px 0;
+    padding-bottom: 2px;
+    border-bottom: 2px solid rgb(39, 102, 63);
+    font-size: 30px;
+}
+
+.card-product {
+    display: flex;
+    justify-content: space-between;
+}
+.card-product {
+    text-align: justify;
+}
+.product-box h2{
+    margin-bottom: 10px;
+}
+.product-box p{
+    line-height: 30px;
+}
+
+.product-img-box {
+    margin-top: -65px;
+
+}
+.btn-product {
+    border: none;
+    outline: none;
+    font-weight: bold;
+    color: honeydew;
+    border-radius: 15px;
+    padding: 10px 35px;
+    background-color: rgb(68, 67, 65);
+}
+.product-right .product-box {
+    order: 2;
+}
+
+
+@media screen and (max-width: 765px) {
+    #product {
+        padding: 0;
+    }
+    .card-product{
+        flex-direction: column;
+    }
+    .product-box h2 {
+        text-align: center;
+    }
+    .product-img-box {
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .product-img-box img {
+        width: 350px;
+        height: 350px;
+       
+    }
+  }
+  @media screen and (max-width: 375px) {
+    .card-product{
+        flex-direction: column;
+    }
+    .product-box h2 {
+        text-align: center;
+    }
+    .product-img-box {
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .product-img-box img {
+        width: 250px;
+        height: 250px;
+    
+    }
+  } 
+.btn-gray {
+    background-color: #444444;
+}
+#contact {
+    height: 600px;
+    background-image: url(../img/imgjam/background2.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    padding: 20px 40px;
+    background: linear-gradient(90deg, rgba(68,68,68,.9) 50%,rgba(114, 114, 111,.9) 50%);
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.form-info {
+    margin-right: 40px;
+}
+
+.input-box {
+    display: flex;
+}
+
+.form input {
+    padding: 10px;
+    border: none;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px){
+    #contact {
+        height: 200px;
+        padding: 0 40px;
+    }
+
+    .form {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .form-info {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #contact {
+        padding: 40px;
+    }
+}
+#footer {
+    
+    text-align: center;
+    background-color: gray;
+    padding: 50px;
+    margin-bottom: -50px;
+}
+#footer a {
+    text-decoration: none;
+    color: black;
+}
+
+/* my javascript sticky */
+.myH1 {
+    position: fixed;
+    right: 0;
+    bottom: 32px;
+    z-index: 1;
+    font-size: 50px;
+    font-weight: bold;
+    background-color:green;
+    color:white;
+   
+}
+
+
+@media screen and (max-width: 768px) {
+    .myH1{
+        display: none;
+    }
+}
+
+.anchor1 {
+    position: fixed;
+    bottom: 0;
+    right: 80px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    background-color: black;
+}
+.anchor2 {
+    position: fixed;
+    bottom: 0;
+    right: 300px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    background-color: black;
+
+}
+.myH3 {
+    position: fixed;
+    bottom: 90px;
+    right: 478px;
+    z-index: 1;
+    font-size: 25px;
+    font-weight: bold;
+    background-color:red;
+    color:black;
+}
+.myH3:onclick {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .myH1{
+        display: none;
+    }
+    .myH3{
+        display: none;
+    }
+}

@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bitter', Times;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin-top: 64px;
+    padding-bottom: 50px;
+}
+
+.btn-green {
+    background-color: #4b8b26;
+}
+.btn-gray {
+    background-color: #444444;
+}
+
+#contact {
+    height: 600px;
+    background-image: url(../img/imgjam/background2.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    padding: 20px 40px;
+    background: linear-gradient(90deg, rgba(68,68,68,.9) 50%,rgba(75,139,38,.9) 50%);
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.form-info {
+    margin-right: 40px;
+}
+
+.input-box {
+    display: flex;
+}
+
+.form input {
+    padding: 10px;
+    border: none;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px){
+    #contact {
+        height: 200px;
+        padding: 0 40px;
+    }
+
+    .form {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .form-info {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #contact {
+        padding: 40px;
+    }
+}
+

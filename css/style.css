@@ -1,0 +1,45 @@
+body {
+  min-height: 500px;
+}
+.navbar {
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+}
+.jumbotron {
+  padding-top: 5rem;
+  background-color: #abe3ec;
+}
+#projects {
+  background-color: #e2edff;
+}
+#projects .projec {
+  text-align: center;
+}
+#project .column {
+  border-bottom: 2px;
+}
+#halamanutama {
+  margin-top: -1rem;
+  margin-right: -1rem;
+  margin-left: -1rem;
+}
+img.apa {
+  height: 535px;
+  width: auto;
+}
+a {
+  text-decoration: none;
+}
+p.apa {
+  background-color: aqua;
+}
+#Galery {
+  background-color: #abe3ec;
+}
+#Contact {
+  background-color: #054953;
+}
+section {
+  padding-top: 0rem;
+}

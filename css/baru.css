@@ -1,0 +1,36 @@
+/* Style the list (remove margins and bullets, etc) */
+ .myH3{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Style the list items */
+  .myH1 {
+    border: 1px solid #ddd;
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+    position: relative;
+  }
+  
+  /* Add a light grey background color on hover */
+  .myH1:hover {
+    background-color: #eee;
+  }
+  
+  /* Style the close button (span) */
+  .myH1 {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    padding: 12px 16px;
+    transform: translate(0%, -50%);
+  }
+  
+  .myH3:hover {background: #bbb;}
